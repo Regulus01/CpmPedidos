@@ -18,7 +18,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddControllers();
 
-//Classe respons·vel para inverter as dependencias
+//Classe respons√°vel para inverter as dependencias
 DependencyInjection.Register(builder.Services);
 
 
