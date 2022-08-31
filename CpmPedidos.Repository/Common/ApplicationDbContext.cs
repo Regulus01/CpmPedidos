@@ -5,7 +5,7 @@ namespace CpmPedidos.Repository
 {
     // Classe responsável por gerenciar o trafego de dados
     // entre a aplicação e o banco de dados
-    public class ApplicationDbContext : DbContext
+    public sealed class ApplicationDbContext : DbContext
     {
         public DbSet<Cidade> Cidades { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
