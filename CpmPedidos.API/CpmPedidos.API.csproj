@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CpmPedidos.Domain\CpmPedidos.Domain.csproj" />
+    <ProjectReference Include="..\CpmPedidos.Interface\CpmPedidos.Interface.csproj" />
+    <ProjectReference Include="..\CpmPedidos.Repository\CpmPedidos.Repository.csproj" />
+  </ItemGroup>
+
 </Project>
