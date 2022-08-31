@@ -1097,7 +1097,8 @@
       "CpmPedidos.Domain >= 1.0.0",
       "CpmPedidos.Interface >= 1.0.0",
       "CpmPedidos.Repository >= 1.0.0",
-      "Microsoft.EntityFrameworkCore.Design >= 6.0.8"
+      "Microsoft.EntityFrameworkCore.Design >= 6.0.8",
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.6"
     ]
   },
   "packageFolders": {
@@ -1154,6 +1155,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.8, )"
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "target": "Package",
+            "version": "[6.0.6, )"
           }
         },
         "imports": [
