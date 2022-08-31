@@ -2,13 +2,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CpmPedidos.API.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class PedidoController : ControllerBase
+ 
+    public class AppBaseController : ControllerBase
     {
-        public PedidoController()
-        {
+        protected readonly IServiceProvider _serviceProvider;
 
+        public AppBaseController(IServiceProvider serviceProvider)
+        {
+            _serviceProvider = serviceProvider;
         }
     }
 }

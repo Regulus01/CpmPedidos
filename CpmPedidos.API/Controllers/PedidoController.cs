@@ -4,11 +4,12 @@ namespace CpmPedidos.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class PedidoController : ControllerBase
+    public class PedidoController : AppBaseController
     {
-        public PedidoController()
-        {
 
+        public PedidoController(IServiceProvider serviceProvider) 
+            : base(serviceProvider)
+        {
         }
     }
 }

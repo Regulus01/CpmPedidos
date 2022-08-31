@@ -15,3 +15,5 @@ G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos.Repository\obj\Deb
 G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos.Repository\obj\Debug\net6.0\refint\CpmPedidos.Repository.dll
 G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos.Repository\obj\Debug\net6.0\CpmPedidos.Repository.pdb
 G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos.Repository\obj\Debug\net6.0\ref\CpmPedidos.Repository.dll
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos.Repository\bin\Debug\net6.0\CpmPedidos.Repository.runtimeconfig.json
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos.Repository\obj\Debug\net6.0\CpmPedidos.Repository.genruntimeconfig.cache
