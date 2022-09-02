@@ -27,5 +27,10 @@ public class ClienteMap : BaseDomainMap<Cliente>
         builder.Property(x => x.Ativo)
             .HasColumnName("ativo")
             .IsRequired();
+
+        // Relacionamento UM pra UM com endereco
+        builder.Property(x => x.IdEndereco)
+            .HasColumnName("id_endereco")
+            .IsRequired();
     }
 }

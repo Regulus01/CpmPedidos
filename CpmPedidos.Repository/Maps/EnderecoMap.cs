@@ -39,6 +39,11 @@ public class EnderecoMap : BaseDomainMap<Endereco>
         builder.Property(x => x.Cep)
             .HasColumnName("cep")
             .HasMaxLength(8);
-       
+
+        //Relacao UM PRA UM com o cliente
+
+        builder.HasOne(x => x.Cliente)
+            .WithOne(x => x.Endereco)
+            .HasForeignKey<Cliente>(x => x.IdEndereco);
     }
 }
