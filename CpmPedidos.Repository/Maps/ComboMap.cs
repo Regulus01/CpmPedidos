@@ -27,5 +27,15 @@ public class ComboMap : BaseDomainMap<Combo>
         builder.Property(x => x.Ativo)
             .HasColumnName("ativo")
             .IsRequired();
+
+        //Relacionamento um pra muitos com imagem
+
+        builder.Property(x => x.IdImagem)
+            .HasColumnName("id_cidade")
+            .IsRequired();
+
+        builder.HasOne(x => x.Imagem)
+            .WithMany()
+            .HasForeignKey(x => x.IdImagem);
     }
 }

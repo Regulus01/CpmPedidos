@@ -26,5 +26,13 @@ public class PedidoMap : BaseDomainMap<Pedido>
 
         builder.Property(x => x.Entrega)
             .HasColumnName("entrega");
+
+        builder.Property(x => x.IdCliente)
+            .HasColumnName("id_cliente")
+            .IsRequired();
+
+        builder.HasOne(x => x.Cliente)
+            .WithMany(x => x.Pedidos)
+            .HasForeignKey(x => x.IdCliente);
     }
 }

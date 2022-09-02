@@ -27,5 +27,25 @@ public class PromocaoProdutoMap : BaseDomainMap<PromocaoProduto>
         builder.Property(x => x.Ativo)
             .HasColumnName("ativo")
             .IsRequired();
+
+        //Relacionamento um pra muitos com imagem
+
+        builder.Property(x => x.IdImagem)
+            .HasColumnName("id_cidade")
+            .IsRequired();
+
+        builder.HasOne(x => x.Imagem)
+            .WithMany()
+            .HasForeignKey(x => x.IdImagem);
+
+        //relacionamento um pra muitos com produto
+
+        builder.Property(x => x.IdProduto)
+            .HasColumnName("id_produto")
+            .IsRequired();
+
+        builder.HasOne(x => x.produto)
+            .WithMany(x => x.Promocoes)
+            .HasForeignKey(x => x.IdProduto);
     }
 }

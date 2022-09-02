@@ -13,5 +13,7 @@ public class Produto : BaseDomain, IExibivel
     
     public int IdCategoria { get; set; }
     public virtual CategoriaProduto Categoria { get; set; }
+
+    public virtual List<PromocaoProduto> Promocoes { get; set; }
     
 }

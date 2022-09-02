@@ -45,5 +45,14 @@ public class EnderecoMap : BaseDomainMap<Endereco>
         builder.HasOne(x => x.Cliente)
             .WithOne(x => x.Endereco)
             .HasForeignKey<Cliente>(x => x.IdEndereco);
+
+        //Relacao Um Pra Muitos com cidade
+        builder.Property(x => x.IdCidade)
+            .HasColumnName("id_cidade")
+            .IsRequired();
+
+        builder.HasOne(x => x.Cidade)
+            .WithMany()
+            .HasForeignKey(x => x.IdCidade);
     }
 }
