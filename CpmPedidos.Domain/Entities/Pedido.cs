@@ -1,6 +1,4 @@
-﻿using CpmPedidos.Domain.Interfaces;
-
-namespace CpmPedidos.Domain.Entities;
+﻿namespace CpmPedidos.Domain.Entities;
 
 public class Pedido : BaseDomain
 {
