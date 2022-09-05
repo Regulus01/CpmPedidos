@@ -15,5 +15,6 @@ public class Produto : BaseDomain, IExibivel
     public virtual CategoriaProduto Categoria { get; set; }
 
     public virtual List<PromocaoProduto> Promocoes { get; set; }
-    
+
+    public virtual List<Combo> Combos { get; set; }
 }
