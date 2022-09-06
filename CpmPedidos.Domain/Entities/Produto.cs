@@ -8,7 +8,7 @@ public class Produto : BaseDomain, IExibivel
     public string Codigo { get; set; }
     public string Descricao { get; set; }
     public decimal Preco { get; set; }
-    public virtual List<Imagem> imagens { get; set; }
+    public virtual List<Imagem> Imagens { get; set; }
     public bool Ativo { get; set; }
     
     public int IdCategoria { get; set; }

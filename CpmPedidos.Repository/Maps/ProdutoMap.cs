@@ -46,5 +46,21 @@ public class ProdutoMap : BaseDomainMap<Produto>
         builder.HasOne(x => x.Categoria)
             .WithMany(x => x.Produtos)
             .HasForeignKey(x => x.IdCategoria);
+
+        builder.HasMany(x => x.Imagens)
+            .WithMany(x => x.Produtos)
+            .UsingEntity<ImagemProduto>(
+                x => x.HasOne(f => f.Imagem).WithMany().HasForeignKey(f => f.IdImagem),
+                x => x.HasOne(f => f.Produto).WithMany().HasForeignKey(f => f.IdProduto),
+                x =>
+                {
+                    x.ToTable("tb_imagem_produto");
+
+                    x.HasKey(f => new { f.IdImagem, f.IdProduto });
+
+                    x.Property(x => x.IdImagem).HasColumnName("id_imagem").IsRequired();
+                    x.Property(x => x.IdProduto).HasColumnName("id_produto").IsRequired();
+                }
+            );
     }
 }
