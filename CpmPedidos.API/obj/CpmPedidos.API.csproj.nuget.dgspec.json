@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.API\\CpmPedidos.API.csproj": {}
+    "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.API\\CpmPedidos.API.csproj": {}
   },
   "projects": {
-    "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.API\\CpmPedidos.API.csproj": {
+    "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.API\\CpmPedidos.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.API\\CpmPedidos.API.csproj",
+        "projectUniqueName": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.API\\CpmPedidos.API.csproj",
         "projectName": "CpmPedidos.API",
-        "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.API\\CpmPedidos.API.csproj",
+        "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.API\\CpmPedidos.API.csproj",
         "packagesPath": "C:\\Users\\jsous\\.nuget\\packages\\",
-        "outputPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.API\\obj\\",
+        "outputPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jsous\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj": {
-                "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj"
+              "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj": {
+                "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj"
               },
-              "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Interface\\CpmPedidos.Interface.csproj": {
-                "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Interface\\CpmPedidos.Interface.csproj"
+              "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Interface\\CpmPedidos.Interface.csproj": {
+                "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Interface\\CpmPedidos.Interface.csproj"
               },
-              "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Repository\\CpmPedidos.Repository.csproj": {
-                "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Repository\\CpmPedidos.Repository.csproj"
+              "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Repository\\CpmPedidos.Repository.csproj": {
+                "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Repository\\CpmPedidos.Repository.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj": {
+    "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj",
+        "projectUniqueName": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj",
         "projectName": "CpmPedidos.Domain",
-        "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj",
+        "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj",
         "packagesPath": "C:\\Users\\jsous\\.nuget\\packages\\",
-        "outputPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Domain\\obj\\",
+        "outputPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jsous\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -137,14 +137,14 @@
         }
       }
     },
-    "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Interface\\CpmPedidos.Interface.csproj": {
+    "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Interface\\CpmPedidos.Interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Interface\\CpmPedidos.Interface.csproj",
+        "projectUniqueName": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Interface\\CpmPedidos.Interface.csproj",
         "projectName": "CpmPedidos.Interface",
-        "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Interface\\CpmPedidos.Interface.csproj",
+        "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Interface\\CpmPedidos.Interface.csproj",
         "packagesPath": "C:\\Users\\jsous\\.nuget\\packages\\",
-        "outputPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Interface\\obj\\",
+        "outputPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Interface\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jsous\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -161,8 +161,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj": {
-                "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj"
+              "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj": {
+                "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj"
               }
             }
           }
@@ -195,14 +195,14 @@
         }
       }
     },
-    "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Repository\\CpmPedidos.Repository.csproj": {
+    "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Repository\\CpmPedidos.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Repository\\CpmPedidos.Repository.csproj",
+        "projectUniqueName": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Repository\\CpmPedidos.Repository.csproj",
         "projectName": "CpmPedidos.Repository",
-        "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Repository\\CpmPedidos.Repository.csproj",
+        "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Repository\\CpmPedidos.Repository.csproj",
         "packagesPath": "C:\\Users\\jsous\\.nuget\\packages\\",
-        "outputPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Repository\\obj\\",
+        "outputPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jsous\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -219,11 +219,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj": {
-                "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj"
+              "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj": {
+                "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj"
               },
-              "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Interface\\CpmPedidos.Interface.csproj": {
-                "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Interface\\CpmPedidos.Interface.csproj"
+              "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Interface\\CpmPedidos.Interface.csproj": {
+                "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Interface\\CpmPedidos.Interface.csproj"
               }
             }
           }

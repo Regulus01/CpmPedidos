@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eKZs3Nnrd4i8GB5PrB91hoC53O9K7pf0CK6BTdygKTNSAcS10R8iK35xR967juWmLedbLViIrDYBv9d2lpYrvA==",
+  "dgSpecHash": "yEjTaP+f634B4IX23aTYG32Mi6QEODudDqTKhV0ohz5mRbZa94/eERw1Nro/bPJ9nxB2CkbJV0PZhOlC9hBQhA==",
   "success": true,
-  "projectFilePath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.API\\CpmPedidos.API.csproj",
+  "projectFilePath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.API\\CpmPedidos.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jsous\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jsous\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.8\\microsoft.entityframeworkcore.6.0.8.nupkg.sha512",

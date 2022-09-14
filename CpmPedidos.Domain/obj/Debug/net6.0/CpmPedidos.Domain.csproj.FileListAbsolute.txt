@@ -10,3 +10,15 @@ G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos.Domain\obj\Debug\n
 G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos.Domain\obj\Debug\net6.0\refint\CpmPedidos.Domain.dll
 G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos.Domain\obj\Debug\net6.0\CpmPedidos.Domain.pdb
 G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos.Domain\obj\Debug\net6.0\ref\CpmPedidos.Domain.dll
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos2\CpmPedidos\CpmPedidos.Domain\bin\Debug\net6.0\CpmPedidos.Domain.deps.json
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos2\CpmPedidos\CpmPedidos.Domain\bin\Debug\net6.0\CpmPedidos.Domain.dll
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos2\CpmPedidos\CpmPedidos.Domain\bin\Debug\net6.0\CpmPedidos.Domain.pdb
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos2\CpmPedidos\CpmPedidos.Domain\obj\Debug\net6.0\CpmPedidos.Domain.csproj.AssemblyReference.cache
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos2\CpmPedidos\CpmPedidos.Domain\obj\Debug\net6.0\CpmPedidos.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos2\CpmPedidos\CpmPedidos.Domain\obj\Debug\net6.0\CpmPedidos.Domain.AssemblyInfoInputs.cache
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos2\CpmPedidos\CpmPedidos.Domain\obj\Debug\net6.0\CpmPedidos.Domain.AssemblyInfo.cs
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos2\CpmPedidos\CpmPedidos.Domain\obj\Debug\net6.0\CpmPedidos.Domain.csproj.CoreCompileInputs.cache
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos2\CpmPedidos\CpmPedidos.Domain\obj\Debug\net6.0\CpmPedidos.Domain.dll
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos2\CpmPedidos\CpmPedidos.Domain\obj\Debug\net6.0\refint\CpmPedidos.Domain.dll
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos2\CpmPedidos\CpmPedidos.Domain\obj\Debug\net6.0\CpmPedidos.Domain.pdb
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos2\CpmPedidos\CpmPedidos.Domain\obj\Debug\net6.0\ref\CpmPedidos.Domain.dll

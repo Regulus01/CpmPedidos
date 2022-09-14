@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IvOqrhBSEh10xQ3qQ1MOYO416ULlfNKlcvCURV9FzDdPldLNsC63JRo1c0jfEmpW9L6pMeg1PLeexf3ykVfYzQ==",
+  "dgSpecHash": "kejqgFHNdb3g9AZYvd7lVdTPrcvJzREhY4km7ifxhTFEVNgAFJU7v8eQaUHKZIr/Vsk2QRPzSB9bg1vBb6bnKQ==",
   "success": true,
-  "projectFilePath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj",
+  "projectFilePath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

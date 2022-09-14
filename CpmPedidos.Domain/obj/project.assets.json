@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj",
+      "projectUniqueName": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj",
       "projectName": "CpmPedidos.Domain",
-      "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj",
+      "projectPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Domain\\CpmPedidos.Domain.csproj",
       "packagesPath": "C:\\Users\\jsous\\.nuget\\packages\\",
-      "outputPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos\\CpmPedidos.Domain\\obj\\",
+      "outputPath": "G:\\My Drive\\Cursos\\CursoEntityFramework\\CpmPedidos2\\CpmPedidos\\CpmPedidos.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jsous\\AppData\\Roaming\\NuGet\\NuGet.Config",
