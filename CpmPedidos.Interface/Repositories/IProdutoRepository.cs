@@ -6,4 +6,5 @@ public interface IProdutoRepository
 {
     IEnumerable<Produto> GetAll();
     IEnumerable<Produto> Search(string text);
+    Produto Detail(int id);
 }

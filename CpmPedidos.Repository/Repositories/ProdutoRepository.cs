@@ -1,5 +1,6 @@
 ﻿using CpmPedidos.Domain.Entities;
 using CpmPedidos.Interface.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace CpmPedidos.Repository.Repositories;
 
@@ -24,5 +25,13 @@ public class ProdutoRepository: BaseRepository, IProdutoRepository
                                     x.Descricao.ToUpper().Contains(text.ToUpper())))
             .OrderBy(x => x.Nome)
             .ToList();
+    }
+
+    public Produto Detail(int id)
+    {
+        return _context.Produtos
+            .Include(x => x.Imagens)
+            .Include(x => x.Categoria)
+            .FirstOrDefault(x => x.Ativo && x.Id == id);
     }
 }

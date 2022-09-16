@@ -25,5 +25,22 @@ public class ProdutoController : AppBaseController
     {
         var rep = (IProdutoRepository)_serviceProvider.GetService(typeof(IProdutoRepository))!;
         return rep.Search(text);
+    } 
+    
+    [HttpGet]
+    [Route("{id}")]
+    public Produto? Detail(int? id)
+    {
+        if ((id ?? 0) > 0)
+        {
+            var rep = (IProdutoRepository)_serviceProvider.GetService(typeof(IProdutoRepository))!;
+            return rep.Detail(id.Value);
+        }
+        else
+        {
+            return null;
+        }
     }
+
+    
 }
