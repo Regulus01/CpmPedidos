@@ -16,7 +16,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     assembly.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName));
 });
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = 
+    Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
 //Classe responsável para inverter as dependencias
 DependencyInjection.Register(builder.Services);

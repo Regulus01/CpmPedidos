@@ -109,3 +109,7 @@ G:\Meu Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos\CpmPedidos\CpmPed
 G:\Meu Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos\CpmPedidos\CpmPedidos.API\obj\Debug\net6.0\ref\CpmPedidos.API.dll
 G:\Meu Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos\CpmPedidos\CpmPedidos.API\obj\Debug\net6.0\CpmPedidos.API.pdb
 G:\Meu Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos\CpmPedidos\CpmPedidos.API\obj\Debug\net6.0\CpmPedidos.API.genruntimeconfig.cache
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos.API\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos.API\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+G:\My Drive\Cursos\CursoEntityFramework\CpmPedidos\CpmPedidos.API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
