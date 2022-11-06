@@ -11,5 +11,10 @@ namespace CpmPedidos.API.Controllers
         {
             _serviceProvider = serviceProvider;
         }
+        
+        protected T? GetService<T>()
+        {
+            return _serviceProvider.GetService<T>();
+        }
     }
 }
