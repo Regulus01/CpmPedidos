@@ -28,5 +28,11 @@ namespace CpmPedidos.API.Controllers
             return GetService<ICidadeRepository>()!.Criar(model);
         }
         
+        [HttpPut]
+        public int Alterar(CidadeDTO model)
+        {
+            return GetService<ICidadeRepository>()!.Alterar(model);
+        }
+        
     }
 }
