@@ -3,5 +3,6 @@
     public interface IPedidoRepository
     {
         decimal TicketMaximo();
+        dynamic PedidosCliente();
     }
 }

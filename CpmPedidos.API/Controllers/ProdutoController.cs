@@ -13,23 +13,23 @@ public class ProdutoController : AppBaseController
     }
 
     [HttpGet]
-    public IEnumerable<Produto> GetAll()
+    public dynamic GetAll([FromQuery] string ordem = "")
     {
-        var rep = (IProdutoRepository) _serviceProvider.GetService(typeof(IProdutoRepository))!;
-        return rep.GetAll();
+        var rep = (IProdutoRepository)_serviceProvider.GetService(typeof(IProdutoRepository))!;
+        return rep.GetAll(ordem);
     }
 
     [HttpGet]
     [Route("search/{text}/{pagina?}")]
-    public dynamic GetSearch(string text, int pagina = 1)
+    public dynamic GetSearch(string text, int pagina = 1, [FromQuery] string ordem = "")
     {
         var rep = (IProdutoRepository)_serviceProvider.GetService(typeof(IProdutoRepository))!;
-        return rep.Search(text, pagina);
-    } 
-    
+        return rep.Search(text, pagina, ordem);
+    }
+
     [HttpGet]
     [Route("{id}")]
-    public Produto? Detail(int? id)
+    public dynamic Detail(int? id)
     {
         if ((id ?? 0) > 0)
         {
@@ -42,5 +42,20 @@ public class ProdutoController : AppBaseController
         }
     }
 
-    
+    [HttpGet]
+    [Route("{id}/imagens")]
+    public dynamic Imagens(int? id)
+    {
+        if ((id ?? 0) > 0)
+        {
+            var rep = (IProdutoRepository)_serviceProvider.GetService(typeof(IProdutoRepository))!;
+            return rep.Imagens(id.Value);
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+
 }

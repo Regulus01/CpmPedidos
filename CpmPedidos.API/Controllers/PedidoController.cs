@@ -18,8 +18,16 @@ namespace CpmPedidos.API.Controllers
         [Route("ticket-maximo")]
         public decimal TicketMaximo()
         {
-            var rep = (IPedidoRepository)_serviceProvider.GetService(typeof(IPedidoRepository));
+            var rep = (IPedidoRepository)_serviceProvider.GetService(typeof(IPedidoRepository))!;
             return rep.TicketMaximo();
+        }
+        
+        [HttpGet]
+        [Route("por-cliente")]
+        public dynamic PedidosClientes()
+        {
+            var rep = (IPedidoRepository)_serviceProvider.GetService(typeof(IPedidoRepository))!;
+            return rep.PedidosCliente();
         }
     }
 }
