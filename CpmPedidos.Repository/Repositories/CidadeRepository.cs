@@ -96,5 +96,33 @@ namespace CpmPedidos.Repository.Repositories
 
             return 0;
         }
+
+        public bool Excluir(int id)
+        {
+            if (id <= 0)
+            {
+                return false;
+            }
+
+            var entity = _context.Cidades.Find(id);
+            if (entity == null)
+            {
+                return false;
+            }
+
+            try
+            {
+                _context.Cidades.Remove(entity);
+                _context.SaveChanges();
+
+                return true;
+            }
+            catch (Exception)
+            {
+                //ignore
+            }
+
+            return false;
+        }
     }
 }

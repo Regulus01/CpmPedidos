@@ -33,6 +33,13 @@ namespace CpmPedidos.API.Controllers
         {
             return GetService<ICidadeRepository>()!.Alterar(model);
         }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public bool Excluir(int id)
+        {
+            return GetService<ICidadeRepository>()!.Excluir(id);
+        }
         
     }
 }
