@@ -1,4 +1,7 @@
-﻿using CpmPedidos.Interface.Repositories;
+﻿using CpmPedidos.Domain.Dtos;
+using CpmPedidos.Domain.Entities;
+using CpmPedidos.Interface.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace CpmPedidos.Repository.Repositories
 {
@@ -8,6 +11,17 @@ namespace CpmPedidos.Repository.Repositories
         {
         }
 
+        private string GetProximoNumero()
+        {
+            var ret = 1.ToString("00000");
+
+            var ultimoNumero = _context.Pedidos.Max(x => x.Numero);
+            if (!string.IsNullOrEmpty(ultimoNumero))
+            {
+                ret = (Convert.ToInt32(ultimoNumero) + 1).ToString("00000");
+            }
+            return ret;
+        }
         public decimal TicketMaximo()
         {
             var hoje = DateTime.Today;
@@ -45,6 +59,58 @@ namespace CpmPedidos.Repository.Repositories
                 })
                 .ToList();
                 */
+        }
+
+        public string SalvarPedido(PedidoDTO pedido)
+        {
+            var ret = "";
+
+            var cont = 0;
+            
+            try
+            {
+                var entity = new Pedido
+                {
+                    Numero = GetProximoNumero(),
+                    IdCliente = pedido.IdCliente,
+                    CriadoEm = DateTime.Now,
+                    Produtos = new List<ProdutoPedido>()
+                };
+
+                var valorTotal = 0m;
+
+                foreach (var prodPed in pedido.Produtos)
+                {
+                    var precoProduto = _context.Produtos
+                        .Where(x => x.Id == prodPed.IdProduto)
+                        .Select(x => x.Preco)
+                        .FirstOrDefault();
+
+                    if (precoProduto > 0)
+                    {
+                        valorTotal += prodPed.Quantidade * precoProduto;
+                        entity.Produtos.Add(new ProdutoPedido()
+                        {
+                            IdProduto = prodPed.IdProduto,
+                            Quantidade = prodPed.Quantidade,
+                            Preco = precoProduto
+
+                        });
+                    }
+                }
+
+                entity.ValorTotal = valorTotal;
+                _context.Pedidos.Add(entity);
+                _context.SaveChanges();
+
+                ret = entity.Numero;
+            }
+            catch (Exception)
+            {
+                
+            }
+
+            return ret;
         }
     }
 }

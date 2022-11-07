@@ -1,3 +1,4 @@
+using CpmPedidos.Domain.Dtos;
 using CpmPedidos.Interface.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
@@ -28,6 +29,13 @@ namespace CpmPedidos.API.Controllers
         {
             var rep = (IPedidoRepository)_serviceProvider.GetService(typeof(IPedidoRepository))!;
             return rep.PedidosCliente();
+        }
+
+        [HttpPost]
+        [Route("")]
+        public string SalvarPedido(PedidoDTO pedido)
+        {
+            return GetService<IPedidoRepository>().SalvarPedido(pedido);
         }
     }
 }
