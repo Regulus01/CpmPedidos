@@ -69,41 +69,54 @@ namespace CpmPedidos.Repository.Repositories
             
             try
             {
-                var entity = new Pedido
+                using (var transaction = _context.Database.BeginTransaction())
                 {
-                    Numero = GetProximoNumero(),
-                    IdCliente = pedido.IdCliente,
-                    CriadoEm = DateTime.Now,
-                    Produtos = new List<ProdutoPedido>()
-                };
-
-                var valorTotal = 0m;
-
-                foreach (var prodPed in pedido.Produtos)
-                {
-                    var precoProduto = _context.Produtos
-                        .Where(x => x.Id == prodPed.IdProduto)
-                        .Select(x => x.Preco)
-                        .FirstOrDefault();
-
-                    if (precoProduto > 0)
-                    {
-                        valorTotal += prodPed.Quantidade * precoProduto;
-                        entity.Produtos.Add(new ProdutoPedido()
+                    try {
+                        var entity = new Pedido
                         {
-                            IdProduto = prodPed.IdProduto,
-                            Quantidade = prodPed.Quantidade,
-                            Preco = precoProduto
+                            Numero = GetProximoNumero(),
+                            IdCliente = pedido.IdCliente,
+                            CriadoEm = DateTime.Now,
+                            Produtos = new List<ProdutoPedido>()
+                        };
 
-                        });
+                        var valorTotal = 0m;
+
+                        foreach (var prodPed in pedido.Produtos)
+                        {
+                            var precoProduto = _context.Produtos
+                                .Where(x => x.Id == prodPed.IdProduto)
+                                .Select(x => x.Preco)
+                                .FirstOrDefault();
+
+                            if (precoProduto > 0)
+                            {
+                                valorTotal += prodPed.Quantidade * precoProduto;
+                                entity.Produtos.Add(new ProdutoPedido()
+                                {
+                                    IdProduto = prodPed.IdProduto,
+                                    Quantidade = prodPed.Quantidade,
+                                    Preco = precoProduto
+
+                                });
+                            }
+                        }
+
+                        entity.ValorTotal = valorTotal;
+                        _context.Pedidos.Add(entity);
+                        _context.SaveChanges();
+                        _context.Database.CommitTransaction();
+                        //ou transaction.Commit();
+                        ret = entity.Numero;
+                        
+                    }
+                    catch(Exception ex)
+                    {
+                        transaction.Rollback();
+                        throw;
                     }
                 }
-
-                entity.ValorTotal = valorTotal;
-                _context.Pedidos.Add(entity);
-                _context.SaveChanges();
-
-                ret = entity.Numero;
+                
             }
             catch (Exception)
             {

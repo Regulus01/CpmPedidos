@@ -1,5 +1,6 @@
 ﻿using CpmPedidos.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
 
 namespace CpmPedidos.Repository
 {
@@ -14,10 +15,16 @@ namespace CpmPedidos.Repository
         public DbSet<PromocaoProduto> PromocoesProdutos { get; set; }
         public DbSet<Combo> Combos { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.LogTo(message => Debug.WriteLine(message));
         }
 
         public ApplicationDbContext()
